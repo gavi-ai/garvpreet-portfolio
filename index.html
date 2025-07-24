@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garvpreet Singh – AI x Web3 Dev Portfolio</title>
+    <meta name="description" content="Computer Science student building AI agents & Web3 systems. Passionate about automation, smart contracts, and modern development.">
+    <meta property="og:title" content="Garvpreet Singh – AI x Web3 Developer">
+    <meta property="og:description" content="Building AI agents & Web3 systems that automate wealth and solve problems">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Social Icons Vertical (top right) -->
+    <div class="social-icons-vertical">
+        <a href="https://github.com/gavi-ai" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/garvpreet-singh-60552233b/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/builtbyGavi" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:garvnet358@gmail.com" target="_blank" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div class="neon-loader">
+            <span class="neon-text" id="loadingText">
+                <span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+            </span>
+        </div>
+    </div>
+    <div id="mainContent" style="opacity:0;">
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">GAVI-AI</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1>Garvpreet Singh</h1>
+            <p class="hero-tagline">
+                I build AI agents & Web3 systems that automate wealth, solve problems, and look damn good doing it.
+            </p>
+            <div class="typing-text" id="typingText"></div>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i>
+                    View Resume
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i>
+                    Explore Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-comments"></i>
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Computer Science student at GGSIPU, passionate about AI, Blockchain, and Automation. 
+                    On a mission to build tools that work while I sleep. From self-taught coder to aspiring 
+                    AI entrepreneur. Hustling smart since 2024.
+                </p>
+                <div class="highlight-list">
+                    <div class="highlight-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>Building real-world AI + Web3 tools</h3>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Experienced in AI automation & prompt engineering</h3>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Open to collaborations and remote gigs</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Bachelor in Computer Science</h3>
+                            <p class="timeline-org">Guru Gobind Indraprastha University, Delhi</p>
+                        </div>
+                        <span class="timeline-date">2024 – 2027</span>
+                    </div>
+                    <p class="timeline-description">
+                        Pursuing Computer Science degree with focus on AI, machine learning, and blockchain technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI Agents</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-link"></i>
+                    <h3>Blockchain</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>OpenAI API</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Automation</h3>
+                </div>
+            </div>
+            <div class="about-content" style="margin-top: 3rem;">
+                <p class="about-text">
+                    <strong>Currently exploring:</strong> AI startup ideas, Solidity security, and full-stack Web3 development.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-toggle">
+                <button class="projects-tab active" id="liveTab" onclick="showProjectsTab('live')">LIVE</button>
+                <button class="projects-tab" id="progressTab" onclick="showProjectsTab('progress')">IN PROGRESS</button>
+            </div>
+            <div class="projects-lists">
+                <div class="projects-grid" id="live-projects">
+                    <!-- EchoGPT -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">EchoGPT</h3>
+                            <p class="project-description">
+                                AI-powered journaling platform with mood tracking, soul readings, and self-dialogue via Past/Wise/Future Self personas.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">OpenAI API</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://echo-gpt-tau.vercel.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Site -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Modern Web3 Portfolio</h3>
+                            <p class="project-description">
+                                Futuristic portfolio site showcasing skills, projects, and Web3 interests with responsive design and smooth navigation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TailwindCSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://web3-portfolio-owme.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Voice Assistant -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Voice Assistant</h3>
+                            <p class="project-description">
+                                A voice-controlled desktop AI tool in Python.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SpeechRecognition</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python CLI Chatbot -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Python CLI Chatbot</h3>
+                            <p class="project-description">
+                                Command-line AI bot using OpenAI API.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenAI API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Face Recognition System -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Face Recognition System</h3>
+                            <p class="project-description">
+                                Uses OpenCV + ML to identify faces.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Contract: Basic ERC-20 Token -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Contract: Basic ERC-20 Token</h3>
+                            <p class="project-description">
+                                Basic ERC-20 Token smart contract.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Ethereum</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart Contract: Twitter-like DApp -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-retweet"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Contract: Twitter-like DApp</h3>
+                            <p class="project-description">
+                                Twitter-like DApp with posts & likes on-chain.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Solidity</span>
+                                <span class="tech-tag">Ethereum</span>
+                                <span class="tech-tag">Web3</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-grid" id="progress-projects" style="display:none;">
+                    <!-- In progress projects will go here -->
+                    <!-- EduAI Pro -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">EduAI Pro</h3>
+                            <p class="project-description">Real-time AI tutoring system (Socket.io + Mongo).</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">AI</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- PDF Q&A Bot -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">PDF Q&A Bot</h3>
+                            <p class="project-description">AI that answers questions from PDFs.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">PDF</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job Hunter AI Agent -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Job Hunter AI Agent</h3>
+                            <p class="project-description">Applies to jobs using scraped listings + GPT.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">GPT</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment Booking App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Appointment Booking App</h3>
+                            <p class="project-description">Google Calendar-style booking (MERN).</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MERN</span>
+                                <span class="tech-tag">Full Stack</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- WhatsApp Clone -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">WhatsApp Clone</h3>
+                            <p class="project-description">Real-time chat with Socket.io.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Real-time</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AI Mock Interview App -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Mock Interview App</h3>
+                            <p class="project-description">Behavioral Q&A with GPT + scoring.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">GPT</span>
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">Scoring</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="project-coming-soon">Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Certifications</h2>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Freelance AI & Web3 Developer</h3>
+                            <p class="timeline-org">Self-Initiated</p>
+                        </div>
+                        <span class="timeline-date">Jan 2025 – Present</span>
+                    </div>
+                    <p class="timeline-description">
+                        Working on foundational AI and Blockchain projects to build real-world freelancing portfolio. 
+                        Actively learning AI automation, prompt engineering, and smart contract development.
+                    </p>
+                </div>
+            </div>
+            <h3 class="certifications-title">Certifications</h3>
+            <div class="certifications">
+            
+              <div class="cert-item">
+                <h4 class="cert-title">AI Automation with Python</h4>
+                <p class="cert-org">Google • 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">AI Agent Development Internship</h4>
+                <p class="cert-org">IBM SkillsBuild • July 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">AWS Solutions Architecture</h4>
+                <p class="cert-org">AWS APAC • June 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">Data Analytics</h4>
+                <p class="cert-org">Quantium • June 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">Data Science Virtual Experience</h4>
+                <p class="cert-org">British Airways • July 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">Data Visualization for Business</h4>
+                <p class="cert-org">TATA • July 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">Advanced Software Engineering Job Simulation</h4>
+                <p class="cert-org">Walmart USA • July 2025</p>
+              </div>
+            
+              <div class="cert-item">
+                <h4 class="cert-title">Advertising Sales Virtual Simulation</h4>
+                <p class="cert-org">New York Times • July 2025</p>
+              </div>
+            
+            </div>
+            
+        </div>
+    </section>
+    <!-- SVG Divider -->
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient)" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path><defs><linearGradient id="gradient" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#00d4ff"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs></svg>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Collaborate</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>garvnet358@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Delhi, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/garvpreet-singh-60552233b" target="_blank" style="color: var(--accent-blue);">Connect with me</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="justify-self: center;">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Garvpreet Singh. Built with passion for AI & Web3. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

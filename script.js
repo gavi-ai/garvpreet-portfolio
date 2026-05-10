@@ -1,10 +1,11 @@
 // Typing animation
+// Typing animation
 const typingText = document.getElementById('typingText');
 const phrases = [
-    'Prompt Engineer.',
-    'AI Agent Dev.',
-    'Smart Contract Explorer.',
-    'Modern Magician.'
+    'Data Engineer.',
+    'Pipeline Architect.',
+    'Big Data Orchestrator.',
+    'Distributed Systems Geek.'
 ];
 let phraseIndex = 0;
 let charIndex = 0;
